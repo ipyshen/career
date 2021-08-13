@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: white;
+    /* FFA31A  */
+}
+
+#home-page-btn{
+    background-image: url("../asset/logo.png");
+    background-size: 100%;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.article-link{
+    color: #FFA31A;
+}

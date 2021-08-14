@@ -1,8 +1,23 @@
 body{
     background-color: black;
     color: white;
-    /* FFA31A  */
 }
+strong{
+    color: #FFA31A;
+}
+li{
+    margin: 5px 0px;
+}
+footer{
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 10em;
+}
+code{
+    color: #FFA31A;
+    border: #7b7b7b solid 1px;
+}
+
 
 #home-page-btn{
     background-image: url("../asset/logo.png");
@@ -16,3 +31,21 @@ body{
 .article-link{
     color: #FFA31A;
 }
+.nav-tab{
+    padding: 20px 50px;
+    border-style: solid;
+    border-color: #7b7b7b;
+    border-width: 0px 0px 0px 1px;
+    cursor: pointer;
+}
+.topic-title{
+    color: #FFA31A;
+}
+.ipy-btn{
+    background-color: #FFA31A;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+

@@ -21,18 +21,72 @@
         </nav>
     </header>
 
-    <h1>2021.xx.xx：The topic</h1>
+    <h1>2021.08.14：Hyper reference and media</h1>
     <hr>
     
-    <h1 class="topic-title">Article one</h1>
-   <article>
-       <dl>
-           <dt><h1>Section One</h1></dt>
-           <dd style="width: 20em;">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse impedit quod optio tenetur, fugiat error veniam, amet eveniet repudiandae quidem asperiores harum expedita, odit ipsum quasi molestiae fuga delectus.
-           </dd>
-       </dl>
-   </article>
+    <h1 class="topic-title">Hyper reference</h1>
+    <blockquote>
+        The usage of &lt;a&gt; is：<code>&lt;a href="address of source" target="link open mode"&gt;</code>
+    </blockquote>
+    <article>
+        <dl>
+            <dt class="article-title">
+                Type of href
+            </dt>
+            <dd class="article-content">
+               <table border="1px" cellpadding="5px">
+                    <tr>
+                        <th>Type</th>
+                        <th>Protocol</th>
+                        <th>Example</th>
+                        <th>Code</th>
+                    </tr>
+                    <tr>
+                        <td>url</td>
+                        <td>https://</td>
+                        <td><a href="https://www.github.com">https://www.github.com</a></td>
+                        <td><code>&lt;a href="https://www.github.com"&gt;https://www.github.com&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>in-page</td>
+                        <td>id(#)</td>
+                        <td><a href="#video-title">Video Section</a></td>
+                        <td><code>&lt;a href="#vide-title"&gt;Video Section&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>in-site</td>
+                        <td>relative path</td>
+                        <td><a href="../index.html">Learned-today</a></td>
+                        <td><code>&lt;a href="../index.html"&gt;Learned-today&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>relative path</td>
+                        <td><a href="../asset/image/popcat.png">image</a></td>
+                        <td><code>&lt;a href="../asset/image/popcat.png"&gt;image&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>e-mail</td>
+                        <td>mailto:</td>
+                        <td><a href="mailto:ipyshen@gmail.com">ipyshen@gmail.com</a></td>
+                        <td><code>&lt;a href="mailto:ipyshen@gmail.com"&gt;ipyshen@gmail.com&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>FTP</td>
+                        <td>ftp://</td>
+                        <td><a href="ftp://[username]:[password]@[hostname]">FTP Server</a></td>
+                        <td><code>&lt;a href="ftp://[username]:[password]@[hostname]"&gt;FTP Server&lt;/a&gt;</code></td>
+                    </tr>
+               </table>
+            </dd>
+        </dl>
+    </article>
+
+
+    <h1 class="topic-title">Image</h1>
+    <h1 class="topic-title">Audio</h1>
+    <h1 class="topic-title" id="video-title">Video</h1>
+    
     <input type="button" class="ipy-btn" value="Go Back" onclick="location.href='https://ipyshen.github.io/learned-today/'"">
 </body>
 </html>

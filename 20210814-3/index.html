@@ -9,10 +9,9 @@
 </head>
 
 <body>
-
     <header>
         <nav>
-            <input type="button" id="home-page-btn" onclick="location.href='https://ipyshen.github.io/'">
+            <input class="nav-tab" type="button" id="home-page-btn"  onclick="location.href='https://ipyshen.github.io/'">
             <span class="nav-tab">Front-end</span>
             <span class="nav-tab">Machine Learning</span>
             <span class="nav-tab">Line Bot</span>
@@ -20,73 +19,269 @@
             <span class="nav-tab">FinTech</span>
         </nav>
     </header>
-
-    <h1>2021.08.14：Hyper reference and media</h1>
-    <hr>
     
-    <h1 class="topic-title">Hyper reference</h1>
-    <blockquote>
-        The usage of &lt;a&gt; is：<code>&lt;a href="address of source" target="link open mode"&gt;</code>
-    </blockquote>
-    <article>
-        <dl>
-            <dt class="article-title">
-                Type of href
-            </dt>
-            <dd class="article-content">
-               <table border="1px" cellpadding="5px">
-                    <tr>
-                        <th>Type</th>
-                        <th>Protocol</th>
-                        <th>Example</th>
-                        <th>Code</th>
-                    </tr>
-                    <tr>
-                        <td>url</td>
-                        <td>https://</td>
-                        <td><a href="https://www.github.com">https://www.github.com</a></td>
-                        <td><code>&lt;a href="https://www.github.com"&gt;https://www.github.com&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td>in-page</td>
-                        <td>id(#)</td>
-                        <td><a href="#video-title">Video Section</a></td>
-                        <td><code>&lt;a href="#vide-title"&gt;Video Section&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td>in-site</td>
-                        <td>relative path</td>
-                        <td><a href="../index.html">Learned-today</a></td>
-                        <td><code>&lt;a href="../index.html"&gt;Learned-today&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td>file</td>
-                        <td>relative path</td>
-                        <td><a href="../asset/image/popcat.png">image</a></td>
-                        <td><code>&lt;a href="../asset/image/popcat.png"&gt;image&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td>e-mail</td>
-                        <td>mailto:</td>
-                        <td><a href="mailto:ipyshen@gmail.com">ipyshen@gmail.com</a></td>
-                        <td><code>&lt;a href="mailto:ipyshen@gmail.com"&gt;ipyshen@gmail.com&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td>FTP</td>
-                        <td>ftp://</td>
-                        <td><a href="ftp://[username]:[password]@[hostname]">FTP Server</a></td>
-                        <td><code>&lt;a href="ftp://[username]:[password]@[hostname]"&gt;FTP Server&lt;/a&gt;</code></td>
-                    </tr>
-               </table>
-            </dd>
-        </dl>
-    </article>
+    <main>
+        <h1>2021.08.14：Hyper reference and media</h1>
 
+        <section>
+            <h1 class="topic-title">Hyper reference</h1>
+            <blockquote>
+                The usage of &lt;a&gt; is：<code>&lt;a href="address of source" target="link open mode"&gt;</code>
+            </blockquote>
+        
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        Type of href
+                    </dt>
+                    <dd class="article-content">
+                    <table border="1px" cellpadding="5px">
+                            <tr>
+                                <th>Type</th>
+                                <th>Protocol</th>
+                                <th>Example</th>
+                                <th>Code</th>
+                            </tr>
+                            <tr>
+                                <td>url</td>
+                                <td>https://</td>
+                                <td><a href="https://www.github.com">https://www.github.com</a></td>
+                                <td><code>&lt;a href="https://www.github.com"&gt;https://www.github.com&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>in-page</td>
+                                <td>id(#)</td>
+                                <td><a href="#video-title">Video Section</a></td>
+                                <td><code>&lt;a href="#vide-title"&gt;Video Section&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>in-site</td>
+                                <td>relative path</td>
+                                <td><a href="../index.html">Learned-today</a></td>
+                                <td><code>&lt;a href="../index.html"&gt;Learned-today&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>out-site</td>
+                                <td>id(#)</td>
+                                <td><a href="https://github.com/atom/github#user-content-atom-github-package">Atom README.md</a></td>
+                                <td><code>&lt;a href="https://github.com/atom/github#user-content-atom-github-package"&gt;Atom README.md&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>file</td>
+                                <td>relative path</td>
+                                <td><a href="../asset/image/popcat.png">image</a></td>
+                                <td><code>&lt;a href="../asset/image/popcat.png"&gt;image&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>e-mail</td>
+                                <td>mailto:</td>
+                                <td><a href="mailto:ipyshen@gmail.com">ipyshen@gmail.com</a></td>
+                                <td><code>&lt;a href="mailto:ipyshen@gmail.com"&gt;ipyshen@gmail.com&lt;/a&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>FTP</td>
+                                <td>ftp://</td>
+                                <td><a href="ftp://[username]:[password]@[hostname]">FTP Server</a></td>
+                                <td><code>&lt;a href="ftp://[username]:[password]@[hostname]"&gt;FTP Server&lt;/a&gt;</code></td>
+                            </tr>
+                    </table>
+                    </dd>
+                </dl>
+            </article>
+            
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        Type of target
+                    </dt>
+                    <dd class="article-content">
+                        <table border="1px" cellspacing="5px">
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Link</th>
+                            </tr>
+                            <tr>
+                                <td>_blank</td>
+                                <td>Open in a new window or tab</td>
+                                <td><a href="https://www.github.com" target="_blank">Link</a></td>
+                            </tr>
+                            <tr>
+                                <td>_parent</td>
+                                <td>Open in the parent frame</td>
+                                <td><a href="https://www.github.com" target="_parent">Link</a></td>
+                            </tr>
+                            <tr>
+                                <td>_self <sub>(default)</sub></td>
+                                <td>Open in the same frame</td>
+                                <td><a href="https://www.github.com" target="_self">Link</a></td>
+                            </tr>
+                            <tr>
+                                <td>_top</td>
+                                <td>Open in the full body of the window</td>
+                                <td><a href="https://www.github.com" target="_top">Link</a></td>
+                            </tr>
+                            <tr>
+                                <td>frame-name</td>
+                                <td>Open in named-frame</td>
+                                <td><a href="https://www.github.com" target="New-Frame">Link</a></td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        
+        <hr>
 
-    <h1 class="topic-title">Image</h1>
-    <h1 class="topic-title">Audio</h1>
-    <h1 class="topic-title" id="video-title">Video</h1>
+        <section>
+            <h1 class="topic-title">Image</h1>
+            <blockquote style="display: flex;">
+                <div>
+                    The common image format:
+                    <table border="1px" cell-spacing="5px">
+                        <tr>
+                            <th>Type</th>
+                            <th>Color</th>
+                            <th>Transparency</th>
+                            <th>Animation</th>
+                            <th>Resolution</th>
+                        </tr>
+                        <tr>
+                            <td>GIF</td>
+                            <td>256</td>
+                            <td>Support</td>
+                            <td>Support</td>
+                            <td>Low</td>
+                        </tr>
+                        <tr>
+                            <td>JPG</td>
+                            <td>Full</td>
+                            <td>Not support</td>
+                            <td>Not support</td>
+                            <td>Middle</td>
+                        </tr>
+                        <tr>
+                            <td>PNG</td>
+                            <td>Full</td>
+                            <td>Support</td>
+                            <td>Partially support</td>
+                            <td>High</td>
+                        </tr>
     
-    <input type="button" class="ipy-btn" value="Go Back" onclick="location.href='https://ipyshen.github.io/learned-today/'"">
+                    </table>
+                </div>
+            </blockquote>
+    
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        &lt;figure&gt; and &lt;figcaption&gt;：description for image
+                    </dt>
+                    <dd class="article-content" style="display: flex; justify-content: flex-start; align-items: center;">
+                        <figure>
+                            <img src="../asset/image/rick.png" alt="rick.png" width="200px">
+                            <figcaption>
+                                This is my idol, Rick Astley. 
+                            </figcaption>
+                        </figure>
+                        <pre class="pre-code">
+        &lt;figure&gt;
+            &lt;img src="../asset/image/rick.png" alt="rick.png" width="200px"&gt;
+            &lt;figcaption&gt;
+                This is my idol, Rick Astley. 
+            &lt;/figcaption&gt;
+        &lt;/figure&gt; </pre>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1 class="topic-title">Audio</h1>
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        &lt;audio&gt;：add an audio
+                    </dt>
+                    <dd class="article-content">
+                        <audio controls>
+                            <source src="../asset/audio/Never-Gonna-Give-You-Up.mp3" type="audio/mp3">
+                            Not found message.
+                        </audio>
+    
+                        <dl>
+                            <dt>
+                                Simple version
+                            </dt>
+                            <dd>
+                                <pre class="pre-code">
+        &lt;audio src="../asset/audio/Never-Gonna-Give-You-Up.mp3" controls&gt; </pre>
+                            </dd>
+                        </dl>
+    
+                        <dl>
+                            <dt>
+                                Better version
+                            </dt>
+                            <dd>
+                                <pre class="pre-code">
+        &lt;audio controls&gt;
+            &lt;source src="../asset/audio/Never-Gonna-Give-You-Up.wav" type="audio/wav"&gt;
+            &lt;source src="../asset/audio/Never-Gonna-Give-You-Up.mp3" type="audio/mp3"&gt;
+            Not found message. 
+        &lt;/audio&gt; </pre>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        Attribute of &lt;audio&gt;
+                    </dt>
+                    <dd class="article-content">
+                        <ul>
+                            <li>autoplay</li>
+                            <li>controls</li>
+                            <li>loop</li>
+                            <li>muted</li>
+                            <li>preload</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1 class="topic-title" id="video-title">Video</h1>
+            <blockquote>
+                &lt;video&gt; is similar to &lt;audio&gt;, so we'll introduce another tag <strong>&lt;iframe&gt;</strong> here.
+    
+            </blockquote>
+            <article>
+                <dl>
+                    <dt class="article-title">
+                        &lt;iframe&gt;
+                    </dt>
+                    <dd class="article-content">
+                        <iframe width="640" height="420" src="https://www.youtube.com/embed/072tU1tamd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>We can get the embed by right click a YouTube video and copy it.</p>
+                        <pre class="pre-code">
+        &lt;iframe width="640" height="420" src="https://www.youtube.com/embed/072tU1tamd0" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt; </pre>
+                    </dd>
+                </dl>
+            </article>        
+        </section>
+        
+        <input type="button" class="ipy-btn" value="Go Back" onclick="location.href='https://ipyshen.github.io/learned-today/'"">
+    </main>
+
 </body>
 </html>

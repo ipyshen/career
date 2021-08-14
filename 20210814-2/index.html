@@ -9,10 +9,9 @@
 </head>
 
 <body>
-
     <header>
         <nav>
-            <input type="button" id="home-page-btn" onclick="location.href='https://ipyshen.github.io/'">
+            <input class="nav-tab" type="button" id="home-page-btn" onclick="location.href='https://ipyshen.github.io/'">
             <span class="nav-tab">Front-end</span>
             <span class="nav-tab">Machine Learning</span>
             <span class="nav-tab">Line Bot</span>
@@ -21,56 +20,59 @@
         </nav>
     </header>
 
-    <h1>2021.08.14：About the homepage button</h1>
-    <hr>
+    <main>
+        <h1>2021.08.14：About the homepage button</h1>
+        
+        <h1 class="topic-title">How to make image button</h1>
     
-    <h1 class="topic-title">How to make image button</h1>
+       <article>
+           <dl>
+               <dt class="article-title">
+                   Method 1: Put image in the &lt;button&gt;
+                </dt>
+               <dd class="article-content">
+                   If we put the &lt;img&gt; between &lt;button&gt; and &lt;/button&gt; directly, it will looks like this: <br> <br>
+                   <button><img src="../asset/image/popcat.png" alt="logo" width="100%"></button> 
+                   <strong>But this is so ugly...</strong>
+               </dd>
+           </dl>
+           <dl>
+               <dt class="article-title"> 
+                   Method 2: Use background image
+                </dt>
+               <dd class="article-content">
+                    <ul>
+                        <li>Use <code lang="html">&lt;input type="button"&gt;</code> to replace <code>&lt;button&gt;</code>.</li>
+                        <li>In CSS, apply <code>background-image: url('path-to image');</code> on the &lt;input&gt; element.</li>
+                        <li>Use <code>background-size: 100%;</code> to ensure showing the entire image.</li>
+                    </ul>
+                   <input type="button" style="background-image: url('../asset/image/popcat.png'); width: 140px; height: 130px; background-size: 100%;"> <strong>Now looks better!</strong>
+               </dd>
+           </dl>
+       </article>
+    
+       <hr>
+    
+       <h1 class="topic-title">How to make href button</h1>
+       <article>
+           <dl>
+               <dt class="article-title">
+                   Use the attribute "onclick"
+                </dt>
+               <dd class="article-content">
+                   
+                   In the &lt;input&gt; element, we have an attribute called "onclick", and we can set its value to <code>location.href='path-to-target'</code>. <br>
+                   e.g. the entire &lt;input&gt; will looks like: <code>&lt;input type="button" onclick="location.href='www.github.com'"&gt;</code><br>
+                   For better looking, we can add the attribute "title" or <code>cursor:pointer;</code> on our &lt;input&gt; element. <br><br>
+    
+                   <input type="button" title="https://popcat.click" onclick="location.href='https://popcat.click/'" style="background-image: url('../asset/image/popcat.png'); width: 140px; height: 130px; background-size: 100%; cursor: pointer;">
+               </dd>
+           </dl>
+       </article>
+    
+        <input type="button" class="ipy-btn" value="Go Back" onclick="location.href='https://ipyshen.github.io/learned-today/'"">
+    
+    </main>
 
-   <article>
-       <dl>
-           <dt class="article-title">
-               Method 1: Put image in the &lt;button&gt;
-            </dt>
-           <dd class="article-content">
-               If we put the &lt;img&gt; between &lt;button&gt; and &lt;/button&gt; directly, it will looks like this: <br> <br>
-               <button><img src="../asset/image/popcat.png" alt="logo" width="100%"></button> 
-               <strong>But this is so ugly...</strong>
-           </dd>
-       </dl>
-       <dl>
-           <dt class="article-title"> 
-               Method 2: Use background image
-            </dt>
-           <dd class="article-content">
-                <ul>
-                    <li>Use <code lang="html">&lt;input type="button"&gt;</code> to replace <code>&lt;button&gt;</code>.</li>
-                    <li>In CSS, apply <code>background-image: url('path-to image');</code> on the &lt;input&gt; element.</li>
-                    <li>Use <code>background-size: 100%;</code> to ensure showing the entire image.</li>
-                </ul>
-               <input type="button" style="background-image: url('../asset/image/popcat.png'); width: 140px; height: 130px; background-size: 100%;"> <strong>Now looks better!</strong>
-           </dd>
-       </dl>
-   </article>
-
-   <hr>
-
-   <h1 class="topic-title">How to make href button</h1>
-   <article>
-       <dl>
-           <dt class="article-title">
-               Use the attribute "onclick"
-            </dt>
-           <dd class="article-content">
-               
-               In the &lt;input&gt; element, we have an attribute called "onclick", and we can set its value to <code>location.href='path-to-target'</code>. <br>
-               e.g. the entire &lt;input&gt; will looks like: <code>&lt;input type="button" onclick="location.href='www.github.com'"&gt;</code><br>
-               For better looking, we can add the attribute "title" or <code>cursor:pointer;</code> on our &lt;input&gt; element. <br><br>
-
-               <input type="button" title="https://popcat.click" onclick="location.href='https://popcat.click/'" style="background-image: url('../asset/image/popcat.png'); width: 140px; height: 130px; background-size: 100%; cursor: pointer;">
-           </dd>
-       </dl>
-   </article>
-
-    <input type="button" class="ipy-btn" value="Go Back" onclick="location.href='https://ipyshen.github.io/learned-today/'"">
-</body>
+   </body>
 </html>

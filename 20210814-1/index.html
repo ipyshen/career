@@ -25,39 +25,47 @@
     <hr>
     
     <h1 class="topic-title">Format tags</h1>
+
+
     <article>
-        <h1>&lt;pre&gt;﹕preformatting</h1>
-        <ul>
-            <li>&lt;pre&gt; will display the <strong>original content</strong> of the source code.</li>
-            <li><strong>Tab</strong> and <strong>\n</strong> (newline) will also be applied.</li>
-            <li><strong>&lt;</strong>, <strong>&gt;</strong> and <strong>&amp;</strong> can't be used directly between &lt;pre&gt;.</li>
-            <pre>
-                Here is an example of &lt;pre&gt;.
-                _____________________________________
-                           __                      
-                       　 / )))                         
-                        ／ イ  　　　((( \            
-                        (　 ﾉ　　　　 ￣Ｙ＼          
-                 　     (   ＼   ∧＿∧  ｜　)         
-                        ヽ　 ヽ`(´･ω･)_／ノ/         
-                 　       ＼  |　⌒Ｙ⌒　/ /     　   
-                 　         \  ヽ　｜　 ﾉ /          
-                 　　        ＼ ﾄー仝ーｲ /           
-                 　　         ｜ ミ土彡 ｜           
-                 　　          )　　　  ｜           
-                 　　         /         |           
-                                                    
-                _____________________________________
-            </pre>
-        </ul>
+        <dl>
+            <dt class="article-title">
+                &lt;pre&gt;﹕preformatting
+            </dt>
+            <dd class="article-content">
+                <ul>
+                    <li>&lt;pre&gt; will display the <strong>original content</strong> of the source code.</li>
+                    <li><strong>Tab</strong> and <strong>\n</strong> (newline) will also be applied.</li>
+                    <li><strong>&lt;</strong>, <strong>&gt;</strong> and <strong>&amp;</strong> can't be used directly between &lt;pre&gt;.</li>
+                    <pre>
+                        Here is an example of &lt;pre&gt;.
+                        _____________________________________
+                                   __                      
+                               　 / )))                         
+                                ／ イ  　　　((( \            
+                                (　 ﾉ　　　　 ￣Ｙ＼          
+                         　     (   ＼   ∧＿∧  ｜　)         
+                                ヽ　 ヽ`(´･ω･)_／ノ/         
+                         　       ＼  |　⌒Ｙ⌒　/ /     　   
+                         　         \  ヽ　｜　 ﾉ /          
+                         　　        ＼ ﾄー仝ーｲ /           
+                         　　         ｜ ミ土彡 ｜           
+                         　　          )　　　  ｜           
+                         　　         /         |           
+                                                            
+                        _____________________________________
+                    </pre>
+                </ul>
+            </dd>
+        </dl>
     </article>
 
     <article>
         <dl>
-            <dt>
-                <h1>&lt;blockquote&gt;：indent both side</h1>
+            <dt class="article-title">
+                &lt;blockquote&gt;：indent both side
             </dt>
-            <dd>
+            <dd class="article-content">
                 <div style="display: flex;">
                     <div style="width: 20em; height: 5em; border: 1px solid;" >
                         This is the effect when we not use &lt;blockquote&gt;.
@@ -72,10 +80,10 @@
 
     <article>
         <dl>
-            <dt>
-                <h1>&lt;ol&gt;-type：different ordering ways</h1>
+            <dt class="article-title">
+                &lt;ol&gt;-type：different ordering ways
             </dt>
-            <dd>
+            <dd class="article-content">
                 <table border="1" cellpadding="5">
                     <tr>
                         <th>type="1"</th>
@@ -132,10 +140,10 @@
 
     <article>
         <dl>
-            <dt>
-                <h1>&lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;： definition list</h1>
+            <dt class="article-title"> 
+                &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;： definition list
             </dt>
-            <dd>
+            <dd class="article-content">
                 <ul>
                     <li>&lt;dl&gt;：<strong>Definition List</strong></li>
                     <li>&lt;dt&gt;：<strong>Definition Term</strong></li>
@@ -162,16 +170,16 @@
 
     <article>
         <dl>
-            <dt><h1>&lt;div&gt; vs &lt;span&gt;</h1></dt>
-            <dd>Both &lt;div&gt; and &lt;span&gt; are blocks, but <strong>&lt;div&gt; will create a newline</strong>.</dd>
-            <dd>For example:</dd>
-            <br>
-            <dd>
+            <dt class="article-title">
+                &lt;div&gt; vs &lt;span&gt;
+            </dt>
+            <dd class="article-content">
+                Both &lt;div&gt; and &lt;span&gt; are blocks, but <strong>&lt;div&gt; will create a newline</strong>. <br>
+                For example: <br>
+                
                 <div style="border: 1px solid; width:fit-content">This is div1</div>
                 <div style="border: 1px solid; width:fit-content">This is div2</div>
-            </dd>
-            <br>
-            <dd>
+                <br>
                 <span style="border: 1px solid; width: fit-content;">This is span1</span>
                 <span style="border: 1px solid; width: fit-content;">This is span2</span>
             </dd>

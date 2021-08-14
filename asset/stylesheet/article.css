@@ -1,0 +1,14 @@
+.article-link{
+    color: #FFA31A;
+}
+
+.article-title{
+    display: block;
+    font-size: 1.5em;
+    margin: 1em 0em;
+    font-weight: bold;
+}
+
+.article-content{
+    font-size: 1em;
+}
